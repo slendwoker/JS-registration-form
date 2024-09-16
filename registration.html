@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+    <script src="registration-form-validation.js" defer></script>
+    <style>
+        .error {
+			border: 2px solid red;
+		}	
+
+		.success {
+			border: 2px solid green;
+		}
+    </style>
+</head>
+<body onLoad="document.registration.userid.focus();">
+    <div class="container">
+        <div class="gfg">
+            <div class="gfg1">
+                <a>Registration Form</a>
+            </div>
+            <form name='registration' onSubmit="return formValidation();">
+                <ul>
+                    <li><label for="userid">User id:</label></li>
+                    <li><input type="text" id="userid" name="userid" size="12" /></li>
+                    <li><label for="passid">Password:</label></li>
+                    <li><input type="password" id="passid" name="passid" size="12" /></li>
+                    <li><label for="username">Name:</label></li>
+                    <li><input type="text" id="username" name="username" size="50" /></li>
+                    <li><label for="address">Address:</label></li>
+                    <li><input type="text" id="address" name="address" size="50" /></li>
+                    <li><label for="country">Country:</label></li>
+                    <li>
+                        <select id="country" name="country">
+                            <option selected="" value="Default">(Please select a country)</option>
+                            <option value="AF">Australia</option>
+                            <option value="AL">Canada</option>
+                            <option value="DZ">India</option>
+                            <option value="AS">Russia</option>
+                            <option value="AD">USA</option>
+                        </select>
+                    </li>
+					<li><label for="email">Email:</label></li>
+                    <li><input type="email" id="email" name="email" size="50" /></li>
+                    <li style="font-size: 40px">
+                        <input type="submit" name="submit" value="Submit" />
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
